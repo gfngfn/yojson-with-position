@@ -1,0 +1,25 @@
+opam-version: "1.2"
+maintainer: "b d . g f n g f n @ g m a i l . c o m"
+authors: [
+  "Martin Jambon"
+  "gfngfn"
+]
+homepage: "https://github.com/gfngfn/yojson-with-position"
+bug-reports: "https://github.com/gfngfn/yojson-with-position/issues"
+dev-repo: "https://github.com/gfngfn/yojson-with-position.git"
+available: [ ocaml-version >= "4.02.3"]
+build: [
+  ["dune" "subst" "-n" name] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+]
+
+build-test: [
+  ["dune" "runtest" "-p" name]
+]
+
+depends: [
+  "dune" {build}
+  "cppo" {build}
+  "easy-format"
+  "biniou" {>= "1.2.0"}
+]

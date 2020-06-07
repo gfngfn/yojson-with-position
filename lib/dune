@@ -33,7 +33,7 @@
 
 (library
  (name yojson)
- (public_name yojson)
+ (public_name yojson-with-position)
  (modules yojson yojson_biniou)
  (wrapped false)
  (synopsis "JSON parsing and printing (successor of json-wheel)")

@@ -1,5 +1,5 @@
 (lang dune 2.0)
 
-(name yojson)
+(name yojson-with-position)
 
 (formatting disabled)

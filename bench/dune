@@ -3,4 +3,4 @@
 (executable
  (name bench)
  (flags -safe-string)
- (libraries yojson))
+ (libraries yojson-with-position))
